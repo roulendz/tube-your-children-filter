@@ -1,0 +1,5 @@
+#if contact.archived
+<button hx-patch="/contacts/${contact.id}/unarchive">Unarchive</button>
+#else
+<button hx-delete="/contacts/${contact.id}">Archive</button>
+#end
